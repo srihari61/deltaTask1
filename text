@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>Delta task 1</title>
+<meta charset="utf-8">
+</head>
+<body>
+<h2 style="position: relative; left:550px;">Mentee List</h2>
+Name:<input type="text" id="one"><br>
+Comments:<textarea id="two" width="600px" height="120px"></textarea><br>
+Rating:<input type="text" id="three" width="10px"><input  type="text" value="/10" width="10px" disabled>
+  <input id="inputSignal" type="submit" value="Add"> 
+<div class="btn-group" >
+    <style>
+    .btn-group button
+    {
+        display: block;
+    }
+    .btn-group button:not(:last-child) 
+    {
+        border-bottom: none; /* Prevent double borders */
+    }
+    </style>
+</div>
+<script type="text/javascript" src="deltatask1.js"></script>
+</body>
+</html>
+
+<!--
+
+
+
+
+......................
+
+
+ // check input
+  if (document.getElementById('miterLimit').value.match(/\d+(\.\d+)?/)) {
+    ctx.miterLimit = parseFloat(document.getElementById('miterLimit').value);
+  } else {
+    alert('Value must be a positive number');
+  }
+ 
+ -->
