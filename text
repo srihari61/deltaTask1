@@ -3,6 +3,7 @@
 <title>Delta task 1</title>
 <meta charset="utf-8">
 </head>
+
 <body>
 <h2 style="position: relative; left:550px;">Mentee List</h2>
 Name:<input type="text" id="one"><br>
@@ -11,11 +12,11 @@ Rating:<input type="text" id="three" width="10px"><input  type="text" value="/10
   <input id="inputSignal" type="submit" value="Add"> 
 <div class="btn-group" >
     <style>
-    .btn-group button
+    .btn-group.buttonNumber
     {
         display: block;
     }
-    .btn-group button:not(:last-child) 
+    .btn-group.buttonNumber:not(:last-child) 
     {
         border-bottom: none; /* Prevent double borders */
     }

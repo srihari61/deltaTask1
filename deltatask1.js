@@ -1,12 +1,12 @@
 var menteeName=document.getElementById("one").value;
 var menteeComment=document.getElementById("two").value;
 var menteeRating=document.getElementById("three").value;
-var data={"textName":menteeName, "textRating":menteeRating, "textComment":menteeComment};
+var data={"textName":"menteeName", "textRating":"menteeRating", "textComment":"menteeComment"};
         
 var oneent=document.getElementById("one");
 var twoent=document.getElementById("two");
 var threeent=document.getElementById("three");  
-var fourent=document.getElementByClassName("btn-group");
+//var fourent=document.getElementByClassName("btn-group");
 var li;
 
 
@@ -46,7 +46,7 @@ function buttonMaker(data1)
      }
         ); */ 
      li.setAttribute("class","buttonNumber") ;  
-    fourent.appendChild(li);
+    document.getElementByClassName("btn-group").appendChild(li);
 }
     
 
@@ -108,7 +108,7 @@ localStorage.setItem('items', JSON.stringify(itemsArray));
 });
 
 retrieve.forEach(item => {
-  liMaker(item);
+  buttonMaker(item);
 });
 
 
@@ -119,7 +119,7 @@ document.getElementById("inputSignal").addEventListener("click",function(e)
         menteeName="";
         menteeRating="";
         menteeComment="";    */
-        data={"textName":menteeName, "textRating":menteeRating, "textComment":menteeComment};
+        data={"textName":"menteeName", "textRating":"menteeRating", "textComment":"menteeComment"};
         menteeName="";
         menteeRating="";
         menteeComment=""; 
